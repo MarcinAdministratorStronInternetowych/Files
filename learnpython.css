@@ -1,0 +1,279 @@
+.CodeMirror {
+	font-family: monospace;
+	height: 200px;
+    transition: all 0.2s ease;
+}
+
+header {
+    background: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+    height: 110px;
+}
+
+footer#dock {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 2px solid #eee;
+
+}
+footer#dock .footer-toggle {
+    display: none;
+}
+
+footer#dock.maximized .footer-toggle {
+    display: block;
+}
+
+
+
+h1.logo {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 45px;
+  margin: 0;
+  text-decoration: none;
+  line-height: 80px;
+}
+
+pre {
+  font-family: Courier New, monospaced;
+}
+
+img.logo {
+  position: absolute;
+  right: -25px;
+  bottom: 4px;
+}
+
+.quasilink {
+  color: #df0019;
+  cursor: pointer;
+}
+
+.quasilink:hover {
+  color: #800004;
+}
+
+.copyright {
+  font-size: 1em;
+  color: gray;
+  text-align: center;
+  margin: 5px 0;
+
+}
+
+#side {
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: auto;
+}
+
+.sidebar {
+    width: 160px;
+    float: right;
+    padding-left: 5px;
+}
+
+.sidebar h3 {
+    border-bottom: 1px solid #ddd;
+}
+
+.icon-briefcase {
+    padding-right: 5px;
+}
+
+.small-link {
+    color: #58c !important;
+    font-size: 11px;
+}
+
+textarea {
+    cursor: default;
+}
+
+#main {
+
+}
+
+#inner-text > * {
+    margin-bottom: 20px;
+}
+
+.breadcrumb .active {
+    font-weight: bold;
+    color: black;
+}
+
+.title {
+    margin: 20px 0;
+}
+
+.company-logo {
+    max-width: 100%;
+    max-height:100px;
+}
+
+.recaptchatable * {
+    border: 0 !important;
+    line-height: normal !important;
+}
+
+#loading {
+    font-family: Courier New, monospace;
+    font-size: 12px;
+    display: none;
+}
+
+.btn.execute-code {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    footer.minimized {
+
+    }
+
+    #macro-nav {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-height: 500px) {
+    footer.maximized {
+        top: 0;
+    }
+
+    footer.minimized .code-window {
+
+    }
+}
+
+
+@media screen and (max-width: 768px) and (max-height: 800px) {
+    #main {
+        margin-bottom: 30px;
+    }
+}
+
+/* DataCamp */
+.container div.powered-by-datacamp a {
+	font-size: 0.8rem;
+}
+.container div.powered-by-datacamp .logo {
+	vertical-align: middle;
+}
+
+.container div.datacamp-exercise {
+	min-height: 150px;
+}
+
+.nav-tabs>li>a, .nav-pills>li>a {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.course img:first-child {
+    width: 100%;
+}
+
+#dock .maximized {
+	display: none;
+}
+
+#dock .minimized {
+	display: block;
+}
+
+#dock.maximized .maximized {
+	display: block;
+}
+
+#dock.maximized .minimized {
+	display: none;
+}
+
+.navbar-brand {
+    font-family: Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+    .navbar-brand {
+        color: #ccc !important;
+    }
+    body {
+        background: #1b1e21;
+        color: #cccccc;
+    }
+
+    .breadcrumb {
+        color: white;
+        background-color: rgba(255,255,255,0.1);
+    }
+
+    .breadcrumb .active {
+        color: white;
+    }
+
+    .bg-light {
+        background-color: #222222 !important;
+    }
+
+    .bg-primary {
+        background-color: #003b8f !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: rgba(255,255,255,.5);
+    }
+
+    .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+        color: rgba(255,255,255,.9);
+    }
+
+    footer#dock {
+        color: #ccc;
+        background-color: #222222;
+        border-top: 2px solid #333333;
+    }
+
+    :not(pre) > code[class*="language-"], pre[class*="language-"] {
+        rgba(128,128,128,0.5);
+        text-shadow: none;
+    }
+
+	.modal-content {
+		background-color: #202020;
+	}
+	.modal-header {
+		border-bottom: 1px solid #333;
+	}
+	.modal-header .close {
+		color: #fff;
+	}
+	.modal-header img {
+		filter: invert(100%);
+	}
+	.modal-footer {
+		border-top: 1px solid #333;
+	}
+	.form-control {
+		background-color: #151515;
+		border: 1px solid #333;
+        color: #cccccc;
+	}
+	.form-control:focus {
+		background-color: #151515;
+		border: 1px solid #444;
+        color: white;
+	}
+
+}
